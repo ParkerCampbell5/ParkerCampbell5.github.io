@@ -16,10 +16,22 @@ body, html {
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6, 0 0 30px #00e6e6, 0 0 40px #00e6e6, 0 0 50px #00e6e6, 0 0 60px #00e6e6, 0 0 70px #00e6e6;
+        text-shadow:
+            0 0 5px #ff8c00, /* Orange */
+            0 0 10px #ff8c00, /* Orange */
+            0 0 15px #32cd32, /* Green */
+            0 0 20px #32cd32, /* Green */
+            0 0 25px #1e90ff, /* Blue */
+            0 0 30px #1e90ff; /* Blue */
     }
     to {
-        text-shadow: 0 0 20px #00e6e6, 0 0 30px #00e6e6, 0 0 40px #00e6e6, 0 0 50px #00e6e6, 0 0 60px #00e6e6, 0 0 70px #00e6e6, 0 0 80px #00e6e6;
+        text-shadow:
+            0 0 6px #ff8c00, /* Orange */
+            0 0 12px #ff8c00, /* Orange */
+            0 0 18px #32cd32, /* Green */
+            0 0 24px #32cd32, /* Green */
+            0 0 30px #1e90ff, /* Blue */
+            0 0 36px #1e90ff; /* Blue */
     }
 }
 
