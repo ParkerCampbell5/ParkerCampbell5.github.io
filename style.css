@@ -1,39 +1,123 @@
-body, html {
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
     width: 100%;
     height: 100%;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #e6e9f0, #cad3e1); /* Soft gradient */
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Gradient Background Animation */
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #333; /* Darker text color for better contrast */
-}
-
-.container {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.logo {
-    max-width: 150px;
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin: 0.67em 0;
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-p {
-    margin: 1em 0;
+#hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #23a6d5;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Feature Section */
+#features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* About and Contact Section */
+#about, #contact {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 footer {
-    margin-top: 20px;
-    font-size: 0.75em;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
 }

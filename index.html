@@ -3,21 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Fancy Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include AOS library for animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Include FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="YOUR_LOGO_HERE.png" alt="Logo" class="logo">
-        </header>
-        <main>
-            <h1>Coming Soon</h1>
-            <p>Something exciting is on the way. Stay tuned!</p>
-        </main>
-        <footer>
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
-        </footer>
-    </div>
+    <nav>
+        <div class="logo">Your Logo</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section id="hero">
+        <h1>Welcome to Our World</h1>
+        <p>Discover the future with us.</p>
+        <button>Learn More</button>
+    </section>
+    <section id="features" data-aos="fade-up">
+        <div class="feature">
+            <i class="fas fa-bolt"></i>
+            <h3>Fast</h3>
+            <p>Experience lightning-fast performance.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-heart"></i>
+            <h3>Reliable</h3>
+            <p>Dependable services you can trust.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-lock"></i>
+            <h3>Secure</h3>
+            <p>Your safety is our top priority.</p>
+        </div>
+    </section>
+    <section id="about" data-aos="fade-left">
+        <h2>About Us</h2>
+        <p>Learn more about our mission and vision.</p>
+        <!-- Include an engaging image or illustration -->
+    </section>
+    <section id="contact" data-aos="fade-right">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <!-- Social media icons -->
+    </footer>
+
+    <!-- AOS Animation library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
