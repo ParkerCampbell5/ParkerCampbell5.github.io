@@ -4,19 +4,19 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
-    background: url('URL_TO_YOUR_BACKGROUND_IMAGE.jpg') no-repeat center center fixed; 
-    background-size: cover;
+    background: linear-gradient(to bottom right, #e6e9f0, #cad3e1); /* Soft gradient */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: #333; /* Darker text color for better contrast */
 }
 
 .container {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
 }
 
 .logo {
