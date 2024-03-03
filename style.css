@@ -1,54 +1,39 @@
 body, html {
-    height: 100%;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #282c34;
-    color: white;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     font-family: Arial, sans-serif;
+    background: url('URL_TO_YOUR_BACKGROUND_IMAGE.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 .container {
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border-radius: 10px;
 }
 
-@keyframes glow {
-    from {
-        text-shadow:
-            0 0 5px #ff8c00, /* Orange */
-            0 0 10px #ff8c00, /* Orange */
-            0 0 15px #32cd32, /* Green */
-            0 0 20px #32cd32, /* Green */
-            0 0 25px #1e90ff, /* Blue */
-            0 0 30px #1e90ff; /* Blue */
-    }
-    to {
-        text-shadow:
-            0 0 6px #ff8c00, /* Orange */
-            0 0 12px #ff8c00, /* Orange */
-            0 0 18px #32cd32, /* Green */
-            0 0 24px #32cd32, /* Green */
-            0 0 30px #1e90ff, /* Blue */
-            0 0 36px #1e90ff; /* Blue */
-    }
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 2.5em;
+    margin: 0.67em 0;
 }
 
 p {
-    font-size: 1.2rem;
+    margin: 1em 0;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    p {
-        font-size: 1rem;
-    }
+footer {
+    margin-top: 20px;
+    font-size: 0.75em;
 }
